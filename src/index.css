@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* Loading.css */
+
+.bouncing-loader {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 120px;
+  height: 50px;
+}
+
+.ball {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: red;
+  animation: bounce 0.6s infinite alternate;
+}
+
+.ball-1 {
+  background-color: red;
+  animation-delay: 0s;
+}
+
+.ball-2 {
+  background-color: green;
+  animation-delay: 0.2s;
+}
+
+.ball-3 {
+  background-color: blue;
+  animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-30px);
+  }
+}
